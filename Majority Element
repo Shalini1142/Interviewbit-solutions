@@ -1,0 +1,9 @@
+class Solution:
+    # @param A : tuple of integers
+    # @return an integer
+    def majorityElement(self, A):
+        import math
+        n=math.floor(len(A)/2)
+        for i in A:
+            if A.count(i)>n:
+                return i
